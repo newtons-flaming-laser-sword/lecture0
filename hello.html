@@ -7,17 +7,38 @@
       <style>
         .tt { font-family:monospace }
         .example { font-family:monospace; white-space:pre; overflow-x:auto; }
+        .picture {display:block; margin-bottom:20px; margin-left:auto; margin-right:auto; width:50%}
+        .iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+/* 4x3 Aspect Ratio */
+.iframe-container-4x3 {
+  padding-top: 75%;
+}
+        @media screen and (max-width:800px) {.picture{display:block; margin-bottom:20px; text-align:center ; width:100%}}
       </style>
 </head>
 
 <body>
     <p style="font-size:50px;text-align:center;margin-bottom:10px">Jessica Wolf is the most resplendent woman to ever walk the Earth, and I am the luckiest man alive because she is my wife!!</p>
     <p style="font-size:10px;text-align:center;margin-top:10px">I put this webpage together to practice my HTML/CSS skills, and what better subject material to use than my beautiful wife! (I might throw some kid pictures in for good measure)</p>
-    <img src="Jess and Jayden.jpg" alt="My perfect wife and son!" title="My perfect wife and son!!" style="display:block;margin-bottom:20px;margin-left:auto;margin-right:auto;width:50%">
-    <img src="Tiger_Ari.jpg" alt="Such a beautiful little tiger!" title="Such a beautiful little tiger!" style="display:block;margin-bottom:20px;margin-left:auto;margin-right:auto;width:50%">
-<div style="text-align:center">
-  <iframe src="https://drive.google.com/file/d/15DbwpXVtEoWjlfhTFx6ltz61n5hdYeEi/preview"  width="640" height="380">></iframe>
+    <img src="Jess and Jayden.jpg" alt="My perfect wife and son!" title="My perfect wife and son!!" class="picture">
+    <img src="Tiger_Ari.jpg" alt="Such a beautiful little tiger!" title="Such a beautiful little tiger!" class="picture">
+<div class="iframe-container">
+  <iframe src="https://drive.google.com/file/d/15DbwpXVtEoWjlfhTFx6ltz61n5hdYeEi/preview"></iframe>
 </div>
-    <img src="Ari_Jayden_Grandma_Cold_Faces.jpg" alt="Three cold faces" title="Those cold faces are the best!" style="display:block;margin-top:20px;margin-left:auto;margin-right:auto;width:50%">
+    <img src="Ari_Jayden_Grandma_Cold_Faces.jpg" alt="Three cold faces" title="Those cold faces are the best!" class="picture" style="margin-top:20px">
 </body>
 </html>
